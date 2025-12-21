@@ -6,24 +6,34 @@
 }
 
 html, body{
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .parent{
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: #111;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  /* justify-content: space-evenly; */
+
 }
 .card{
-  height: 350px;
-  width: 250px;
+  height: 250px;
+  width: 195px;
   background-color: #fff;
   border-radius: 30px;
-  padding: 23px;
+  padding: 20px 18px;
   display: flex;
+  
   flex-direction: column;
   justify-content: space-between;
+  
 }
 
 .card .top{
@@ -65,27 +75,64 @@ html, body{
 .bottom{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   border-top:1px solid #b1b1b1;
-  padding: 10px;
+ padding-top: 10px;
+
 }
 
 
 .center{
-  background-color: red;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .center h3{
-  font-size: 15px;
+  font-size: 11px;
   font-weight: 500;
 }
 
-.center SPAN{
-  font-size: 10px;
+.center h3 span{
+  font-size: 7px;
   font-weight: 400;
   color: #8b8b8b;
 }
 
 .center h2{
-  font-size: 14px;
+  font-size: 12px;
+
+}
+
+.center .tags{
+  display: flex;
+  gap: 10px;
+  font-size: 8px;
+  
+  
+  
+}
+
+.center .tags .tag{
+  background-color: #ecdede;
+  border-radius: 2px;
+  padding: 3px 5px;
+}
+
+.bottom h3{
+  font-size: 15px;
+}
+
+.bottom p{
+  font-size: 8px;
+  opacity: 70%;
+}
+
+.bottom button{
+  background-color: #0e0e0e;
+  color: white;
+  padding: 3px 5px;
+  border-radius: 4px;
+  border: none;
 }
