@@ -1,5 +1,6 @@
 import React from 'react'
 import ImgButton from './ImgButton'
+import ImgText from './ImgText'
 
 const data = ["/images/bg1.jpeg","/images/bg2.jpeg","/images/bg3.jpeg"]
 
@@ -12,6 +13,7 @@ const ImageCard = (props) => {
 
         <p className=' h-10 w-10 pt-2 rounded-[50%]  mt-3 ml-3 inline-block bg-white text-center' > 1</p>
         <div className='m-5'>
+          <ImgText/>
           <ImgButton />
         </div>
     </div>
